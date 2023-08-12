@@ -9,7 +9,7 @@ import UpdateBookInfo from './components/UpdateBookInfo';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className='App'>
         <Routes>
           <Route exact path='/' element={<ShowBookList />} />
           <Route path='/create-book' element={<CreateBook />} />
