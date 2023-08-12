@@ -18,7 +18,7 @@ app.use(cors({ origin: true, credentials: true }));
 // Init Middleware
 app.use(express.json({ extended: false }));
 
-app.get('/', (req, res) => res.send('Doodyah'));
+app.get('/', (req, res) => res.send('Doodyah, yahdood'));
 
 // use Routes
 app.use('/api/books', books);
