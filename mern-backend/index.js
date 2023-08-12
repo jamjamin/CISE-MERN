@@ -13,7 +13,7 @@ const app = express();
 connectDB();
 
 // cors
-app.use(cors({ origin: true, credentials: true }));
+app.use(cors({ origin: "https://cise-mern-one.vercel.app", credentials: true }));
 
 // Init Middleware
 app.use(express.json({ extended: false }));
