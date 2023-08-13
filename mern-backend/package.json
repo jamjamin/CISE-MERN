@@ -2,10 +2,10 @@
   "name": "mern-backend",
   "version": "1.0.0",
   "description": "I learn how to MERN",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "app": "nodemon app.js",
+    "start": "node index.js",
+    "app": "nodemon index.js",
     "test": "NODE_ENV= jest"
   },
   "author": "",
