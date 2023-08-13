@@ -51,7 +51,7 @@ function UpdateBookInfo(props) {
     };
 
     axios
-      .put(`http://localhost:8082/api/books/${id}`, data)
+      .put(`https://cise-mern-backend-lime.vercel.app/api/books/${id}`, data)
       .then((res) => {
         navigate(`/show-book/${id}`);
       })
