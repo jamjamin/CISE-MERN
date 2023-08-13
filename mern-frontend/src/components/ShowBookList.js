@@ -9,7 +9,7 @@ function ShowBookList() {
 
   useEffect(() => {
     axios
-      .get('https://cise-mern-eight.vercel.app/api/books')
+      .get('https://cise-mern-backend-lime.vercel.app/api/books')
       .then((res) => {
         setBooks(res.data);
       })
