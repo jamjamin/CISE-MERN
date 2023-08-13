@@ -1,6 +1,8 @@
 // app.js
 
 const express = require('express');
+const dotenv = require('dotenv');
+dotenv.config({path: './.env' });
 const connectDB = require('./config/db');
 const cors = require('cors');
 
@@ -26,3 +28,7 @@ app.use('/api/books', books);
 const port = process.env.PORT || 8082;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
+
+const routes = require('./routes/api/books');
+
+app.use('/api', routes);
